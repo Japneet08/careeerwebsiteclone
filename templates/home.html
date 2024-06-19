@@ -79,13 +79,20 @@
   <!-- <link href="home.css" rel="stylesheet"  /> -->
 </head>
 <body>
-  
+  {% include 'navbar.html' %}
   <div id="container">
   <h1 >The DigiTals Welcomes you !...</h1>
   <img id="banner" src="https://images.unsplash.com/photo-1554290712-e640351074bd?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
   <h2 class="heading" > About DigiTals </h2>
-  <p class="para">"hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et "
+    <div class="row" style ="margin-bottom:16px">
+      <div class="col-md-6">
+  <p class="para" class="col-6">"hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et "
   </p>
+      </div>
+      <div class="col-3 d-none d-md-block"">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlJTIwd29ya2luZ3xlbnwwfHwwfHx8MA%3D%3D" alt="image" style="border-radius:6px; margin-top:2px; height:80%px;" >
+      </div>
+    </div>
 <h2 class="heading">Job Openings</h2>
   <p>
     <!-- templating syntax is a special way to display dynamic data into html css  -->
@@ -94,9 +101,10 @@
     {% endfor %}
   </p>
     <div class="contact-us">
-<button class="btn btn-outline-primary">Contact Us</button>
+<a href="mailto:japneetkaur4564@gmail.com?subject=Questions%20and%20inquiries%20regarding%20new%20job%20openings&body=Name%3A%20%3Cyour%20name%3E%0D%0AQuestion%3A%20%3CEnter%20your%20question%20here..%20Our%20team%20will%20soon%20reach%20out%20to%20you%20%3E" class="btn btn-outline-primary">Contact Us</a>
     </div>
 </div>
+  <footer>{%include'footer.html'%}</footer>
 </body>
 </html>
 
