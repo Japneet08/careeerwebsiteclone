@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 # DEFINING A FUNCTION
 def hello_world():
-  return "Hello wow"
+  return "Hello World"
 
 
 if (__name__) == "__main__":
