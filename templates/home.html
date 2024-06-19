@@ -1,0 +1,111 @@
+<!--html page  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <title>DigiTals</title>
+  <style>
+    body{
+      border:0;
+    }
+    #container{
+      max-width:80%;
+      margin:0 auto;
+      /* border:2px solid red; */
+      box-sizing:border-box;
+      /* border: 5px solid red; */
+    }
+    h1{
+      font-size:65px;
+      font-family:Roboto;
+      font-weight:normal;
+      color:rgb(0,100,100);
+      text-align:center;
+      padding-bottom:20px;
+      padding-top :20px;
+    }
+    #banner{
+      display: block;
+      width:95%;
+      height:510px;
+      object-fit:cover;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   .heading{
+      font-size:32px;
+      font-family:Roboto;
+      font-weight:normal;
+      color:rgb(0,100,100);
+      text-align:center;
+     margin-top:30px;
+    }
+    .para{
+      font-size:20px;
+      font-family:Roboto;
+      font-weight:normal;
+      color:rgb(0,0,0);
+      margin:0,auto;
+      text-align:justify;
+      padding-left: 30px;
+      padding-right:30px;
+    }
+    .contact-us{
+      text-align:center;
+      margin:0,auto;
+    }
+    .jobroles{
+      color:rgb(0,100,100);
+      margin-bottom:4px;
+      font-size:25px;
+    font-family: Robototo;
+    }
+    .jobinfo{
+      font-family: Robototo;
+      font-size:20px;
+    }
+   .eachContainer{
+     margin-bottom:30px;
+     padding-bottom:5px;
+     padding-left:30px;
+   }
+  </style>
+  <!-- <link href="home.css" rel="stylesheet"  /> -->
+</head>
+<body>
+  
+  <div id="container">
+  <h1 >The DigiTals Welcomes you !...</h1>
+  <img id="banner" src="https://images.unsplash.com/photo-1554290712-e640351074bd?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+  <h2 class="heading" > About DigiTals </h2>
+  <p class="para">"hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et "
+  </p>
+<h2 class="heading">Open Positions</h2>
+  <p>
+    <!-- templating syntax is a special way to display dynamic data into html css  -->
+    {%for job in jobs %}
+     {%include("jobitem.html")%}
+    {% endfor %}
+  </p>
+    <div class="contact-us">
+<button class="btn btn-outline-primary">Contact Us</button>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
